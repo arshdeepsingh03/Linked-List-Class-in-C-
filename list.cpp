@@ -13,19 +13,12 @@ List< DATATYPE >::List()
      lastPtr( 0 ),
      currentListLength( 0 ) 
 {
-    #ifdef DEBUG_LIST
-        cout << "List C called on " << this << endl;
-    #endif 
 }
 
 // destructor
 template< typename DATATYPE >
 List< DATATYPE >::~List() 
 {
-    #ifdef DEBUG_LIST
-        cout << "List D called on " << this << endl;
-    #endif 
-    
     deleteTrailingNodes( firstPtr );
 }
 
